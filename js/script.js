@@ -1,4 +1,4 @@
-// Add custom JavaScript here
+
 function runTypingEffect() {
     const text = 'I am Shaheen Salma. '
     const typingElement = document.getElementById('typing-text');
@@ -20,5 +20,5 @@ function typeText(text, typingElement, delay) {
 document.addEventListener('DOMContentLoaded', runTypingEffect);
 
 function resetForm() {
-    document.getElementById('myForm').reset();  // Resets the form
+    document.getElementById('myForm').reset();  
   }
