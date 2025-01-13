@@ -19,3 +19,8 @@ function typeText(text, typingElement, delay) {
   
 document.addEventListener('DOMContentLoaded', runTypingEffect);
 
+function submitForm(event) {
+    event.preventDefault();  // Prevents the default form submission
+    alert("Form submitted!");
+    document.getElementById("myForm").reset();  // Clears the form
+  }

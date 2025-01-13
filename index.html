@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Shaheen | Web Developer</title>
   </head>
-  <body>
+  <body onload="myFunction()">
     <header class="header vh-100 text-center position-relative">
       <div
         class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
@@ -442,7 +442,12 @@
               </p>
 
               <!-- Form -->
-              <form action="https://formspree.io/f/meoonlag" method="POST">
+              <form
+                id="myForm"
+                onsubmit="submitForm(event)"
+                action="https://formspree.io/f/meoonlag"
+                method="POST"
+              >
                 <div class="mb-5">
                   <input
                     type="text"
